@@ -1,0 +1,8 @@
+package: gobufrkit
+import:
+- package: github.com/dgryski/go-bitstream
+- package: github.com/seanpont/assert
+- package: github.com/Shopify/go-lua
+- package: github.com/spf13/viper
+- package: github.com/spf13/cobra
+- package: github.com/mitchellh/go-homedir
