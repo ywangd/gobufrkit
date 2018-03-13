@@ -1,12 +1,12 @@
-hash: 1ec9b08cfffbf0a67257ca5252b277478933f7ac3ba78c200429c400a6950eb1
-updated: 2017-09-04T12:43:53.96807223+10:00
+hash: 163e916ab41163ac1fc47f257f3ef5240775e03c219e147b3c3e70330b972a9a
+updated: 2017-10-22T20:23:49.590664649+11:00
 imports:
 - name: github.com/dgryski/go-bitstream
   version: 7d46cd22db7004f0cceb6f7975824b560cf0e486
 - name: github.com/fsnotify/fsnotify
   version: 4da3e2cfbabc9f751898f250b49f2439785783a1
 - name: github.com/hashicorp/hcl
-  version: 8f6b1344a92ff8877cf24a5de9177bf7d0a2a187
+  version: 23c074d0eceb2b8a5bfdbb271ab780cde70f05a8
   subpackages:
   - hcl/ast
   - hcl/parser
@@ -23,33 +23,35 @@ imports:
 - name: github.com/mitchellh/go-homedir
   version: b8bc1bf767474819792c23f32d8286a45736f1c6
 - name: github.com/mitchellh/mapstructure
-  version: d0303fe809921458f417bcf828397a65db30a7e4
+  version: 06020f85339e21b2478f756a78e295255ffa4d6a
 - name: github.com/pelletier/go-toml
-  version: 9c1b4e331f1e3d98e72600677699fbe212cd6d16
+  version: 8c31c2ec65b208cc2ad1608bf25a3ff91adf1944
+- name: github.com/pkg/errors
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
 - name: github.com/seanpont/assert
   version: 4b06649e62f72436465fa536df365be748192ba3
 - name: github.com/Shopify/go-lua
   version: 88a6f168eee0ba102d7d20c5281056a5dd3d7550
 - name: github.com/spf13/afero
-  version: ee1bd8ee15a1306d1f9201acc41ef39cd9f99a1b
+  version: 5660eeed305fe5f69c8fc6cf899132a459a97064
   subpackages:
   - mem
 - name: github.com/spf13/cast
   version: acbeb36b902d72a7a4c18e8f3241075e7ab763e4
 - name: github.com/spf13/cobra
-  version: 3c0b56b677e04926dfa835a1b3f11cd4f62f076e
+  version: 7b2c5ac9fc04fc5efafb60700713d4fa609b777b
 - name: github.com/spf13/jwalterweatherman
   version: 12bd96e66386c1960ab0f74ced1362f66f552f7b
 - name: github.com/spf13/pflag
-  version: 7aff26db30c1be810f9de5038ec5ef96ac41fd7c
+  version: 97afa5e7ca8a08a383cb259e06636b5e2cc7897f
 - name: github.com/spf13/viper
-  version: 25b30aa063fc18e48662b86996252eabdcf2f0c7
+  version: 8ef37cbca71638bf32f3d5e194117d4cb46da163
 - name: golang.org/x/sys
-  version: 7ddbeae9ae08c6a06a59597f0c9edbc5ff2444ce
+  version: 8dbc5d05d6edcc104950cc299a1ce6641235bc86
   subpackages:
   - unix
 - name: golang.org/x/text
-  version: bd91bbf73e9a4a801adbfb97133c992678533126
+  version: c01e4764d870b77f8abe5096ee19ad20d80e8075
   subpackages:
   - transform
   - unicode/norm

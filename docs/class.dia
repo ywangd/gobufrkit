@@ -1,0 +1,73 @@
+Message {
+}
+
+Section {
+    rel aggregate_of Message
+}
+
+Field {
+    "// The value can be any value,\nincluding Template and Payload"
+    + Value: "interface{}"
+
+    rel aggregate_of Section
+    rel references Payload
+}
+
+Payload {
+}
+
+Subset {
+    "// The root node of the\n hierarchical node tree"
+    - root: "*Node_"
+
+    rel aggregate_of Payload
+}
+
+Cell {
+    - v: "interface{}"
+
+    rel references Node_
+    rel aggregate_of Subset
+}
+
+Node_ {
+    - index: int
+
+    "// The kind determines the\n type of the node, e.g. Sequence etc."
+    - kind: NodeKind
+
+    "// Minimum value used for compressed data"
+    + MinValue: "interface{}"
+
+    "// Number of bits to store difference\n from MinValue for compressed data"
+    + NbitsDiff: uint
+
+    "// A list of attribute nodes"
+    - attributes: "[]*Node_"
+    - reference: "*Node_"
+
+    "// Factor node for delayed replication"
+    - factor: "*Node_"
+
+    "// A list of nodes for sequence descriptor"
+    - nodes: "[]*Node_"
+
+    "// A list of list of nodes for\n replication descriptor"
+    - blocks: "[][]*Node_"
+
+    rel references Descriptor
+}
+
+Descriptor {
+
+    + Operator(): int
+    + Operand(): int
+
+    rel references ID
+}
+
+ID {
+    + F(): int
+    + X(): int
+    + Y(): int
+}
